@@ -4,6 +4,5 @@ steps:
     args: ['clean', 'install']
 
   # Step 2: Deploy the application to App Engine using Maven
-  - name: maven:3.3-jdk-17
-    entrypoint: mvn
+  - name: 'gcr.io/cloud-builders/mvn'
     args: ['package','-Dmaven.test.skip=true']
