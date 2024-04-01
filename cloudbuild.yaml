@@ -5,16 +5,4 @@ steps:
 
   # Step 2: Deploy the application to App Engine using Maven
   - name: 'gcr.io/cloud-builders/mvn'
-<<<<<<< HEAD
     args: ['appengine:deploy', '-DskipTests']
-=======
-    args: ['appengine:deploy']
-
-  # - name: 'gcr.io/cloud-builders/mvn'
-  #   entrypoint: 'bash'
-  #   args:
-  #     - '-c'
-  #     - |
-  #       ./mvnw -DskipTests package appengine:deploy
-
->>>>>>> 52699f0c51919b01017de7ffd6ba548e4a11b698
